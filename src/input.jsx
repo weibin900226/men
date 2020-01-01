@@ -80,7 +80,7 @@ export default class Inputs extends React.Component {
 
         return <WingBlank><List renderHeader={() => '输入'}>
             {
-                this.state.users.map((user, index) => (<InputItem value={this.state.tmpVal[index]} placeholder='本局输的金额，赢的人不填' onChange={(v) => { this.onChange(v, user) }} key={user.value}>{user.label}</InputItem>))
+                this.state.users.map((user, index) => (<InputItem type='number' value={this.state.tmpVal[index]} placeholder='本局输的金额，赢的人不填' onChange={(v) => { this.onChange(v, user) }} key={user.value}>{user.label}</InputItem>))
             }
         </List>
             <WhiteSpace size='xl' />
